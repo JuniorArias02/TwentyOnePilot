@@ -39,7 +39,7 @@ export default function CTA() {
                 <button className="relative inline-flex items-center justify-center px-14 py-5 text-xl font-clancy text-white tracking-widest transition-all duration-300 bg-clancy-red hover:bg-[#b01e15] hover:shadow-[0_0_40px_rgba(218,41,28,0.6)] animate-glow active:scale-95 group overflow-hidden border-2 border-transparent hover:border-white/20">
                     <span className="absolute inset-0 w-full h-full opacity-30 bg-gradient-to-b from-transparent via-transparent to-black transition-all group-hover:opacity-50"></span>
                     <span className="absolute top-0 left-0 w-full h-1 bg-white/20"></span>
-                    <span className="relative">SÍ, ACEPTO IR CONTIGO</span>
+                    <span className="relative">SÍ, ACEPTO</span>
                 </button>
             </div>
         </section>

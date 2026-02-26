@@ -36,6 +36,6 @@ export default function Hero() {
             <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-float opacity-0 animate-[fade-in_1.5s_ease-out_forwards]" style={{ animationDelay: '800ms' }}>
                 <div className="w-[2px] h-16 bg-gradient-to-b from-clancy-yellow to-transparent"></div>
             </div>
-        </section
+        </section>
     )
 }

@@ -4,12 +4,12 @@ export default function Message() {
             <div className="max-w-3xl mx-auto text-center relative z-10">
                 <div className="tape-edge mb-12"></div>
                 <p className="text-3xl md:text-5xl font-clancy text-clancy-paper leading-relaxed mb-8 tracking-wide drop-shadow-md">
-                    A VECES, LAS MEJORES COSAS DE LA VIDA SON AQUELLAS QUE NUNCA PLANEAMOS.
+                    UN SHOW ASÍ NO ESTABA EN LOS PLANES, PERO NO ME LO IBA A PERDER NI MUCHO MENOS ACOMPAÑADO CONTIGO.
                 </p>
                 <p className="text-base md:text-xl text-gray-400 leading-relaxed max-w-2xl mx-auto font-light">
-                    He preparado algo único para ti. No es solo ver una película, es compartir nuestro tiempo
-                    en una atmósfera creada especialmente para nosotros. Sin distracciones, solo nuestra complicidad
-                    y la música de Twenty One Pilots de fondo.
+                    Aprovechando que sacaron la peli del tour, armé esto rápido porque sentía
+                    que la ocasión lo ameritaba.
+                    ¿qué más se le puede pedir a un jueves :3?
                 </p>
             </div>
         </section>
