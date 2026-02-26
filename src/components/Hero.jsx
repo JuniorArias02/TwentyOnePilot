@@ -5,9 +5,9 @@ export default function Hero() {
             <div
                 className="absolute inset-0 z-0"
                 style={{
-                    backgroundImage: 'url(/clancy_bg.png), linear-gradient(to bottom, #1a1a1a, #0a0a0a)',
+                    backgroundImage: 'url(/clancy_poster.png), linear-gradient(to bottom, #1a1a1a, #0a0a0a)',
                     backgroundSize: 'cover',
-                    backgroundPosition: 'center',
+                    backgroundPosition: 'top center',
                     backgroundBlendMode: 'overlay'
                 }}
             >
