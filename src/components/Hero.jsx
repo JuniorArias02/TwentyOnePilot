@@ -5,15 +5,14 @@ export default function Hero() {
             <div
                 className="absolute inset-0 z-0"
                 style={{
-                    backgroundImage: 'url(/clancy_poster.png), linear-gradient(to bottom, #1a1a1a, #0a0a0a)',
+                    backgroundImage: 'url(/clancy_poster.png)',
                     backgroundSize: 'cover',
                     backgroundPosition: 'top center',
-                    backgroundBlendMode: 'overlay'
                 }}
             >
-                <div className="absolute inset-0 bg-clancy-dark/70 backdrop-blur-[2px]"></div>
-                <div className="absolute inset-0 bg-gradient-to-t from-clancy-dark via-transparent to-transparent"></div>
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-clancy-red/5 to-clancy-dark"></div>
+                <div className="absolute inset-0 bg-black/60"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-clancy-dark via-black/40 to-black/80"></div>
+                <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-transparent to-clancy-dark"></div>
             </div>
 
             <div className="relative z-10 text-center px-4 max-w-4xl mx-auto mt-20">
