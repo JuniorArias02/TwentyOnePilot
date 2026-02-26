@@ -1,8 +1,8 @@
 export default function Experience() {
     const features = [
         {
-            title: "EL PLAN",
-            desc: "Sonido de cine, pantalla gigante y ver el show de Clancy en su mejor versión.",
+            title: "MÚSICA & EMOCIÓN",
+            desc: "El sonido de Clancy guiando la noche, Junto nuestras voces.",
             icon: (
                 <svg className="w-8 h-8 text-clancy-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
@@ -10,8 +10,8 @@ export default function Experience() {
             )
         },
         {
-            title: "LA VIBRA",
-            desc: "Palomitas, buena onda y disfrutar del concierto sin que nadie nos moleste.",
+            title: "ATMÓSFERA ÍNTIMA",
+            desc: "Luz baja, ambiente perfecto y la comodidad que solo nosotros entendemos.",
             icon: (
                 <svg className="w-8 h-8 text-clancy-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
@@ -19,8 +19,8 @@ export default function Experience() {
             )
         },
         {
-            title: "LA COMPAÑÍA",
-            desc: "Porque ver esto importaba, pero importaba más ir contigo.",
+            title: "SOLO NOSOTROS",
+            desc: "",
             icon: (
                 <svg className="w-8 h-8 text-clancy-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
