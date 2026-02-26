@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --color-clancy-red: #c8102e;
+  --color-clancy-dark: #0a0a0a;
+  --color-clancy-gray: #1a1a1a;
+  
+  --animate-fade-in: fade-in 1s ease-out forwards;
+  --animate-slide-up: slide-up 1s ease-out forwards;
+  --animate-glow: glow 2s ease-in-out infinite alternate;
+  --animate-float: float 6s ease-in-out infinite;
+
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slide-up {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes glow {
+    from { box-shadow: 0 0 10px rgba(200, 16, 46, 0.2); }
+    to { box-shadow: 0 0 30px rgba(200, 16, 46, 0.8); }
+  }
+
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-clancy-dark text-gray-200 antialiased selection:bg-clancy-red selection:text-white;
+    margin: 0;
+    overflow-x: hidden;
+  }
+}
+
+/* Utilities for staggered animations */
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }
+.delay-600 { animation-delay: 600ms; }
+.delay-700 { animation-delay: 700ms; }
+.delay-800 { animation-delay: 800ms; }
+
+/* In Tailwind v4, custom utility classes can just be regular CSS or via plugins. 
+   These helper classes ensure elements are hidden before the animation starts */
+.opacity-0-init {
+  opacity: 0;
+}
