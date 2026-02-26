@@ -1,59 +1,153 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --color-clancy-red: #c8102e;
+  --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-clancy: "Bebas Neue", impact, sans-serif;
+
+  --color-clancy-red: #da291c;
+  --color-clancy-yellow: #f2c75c;
   --color-clancy-dark: #0a0a0a;
   --color-clancy-gray: #1a1a1a;
-  
+  --color-clancy-paper: #e8e6e1;
+
   --animate-fade-in: fade-in 1s ease-out forwards;
-  --animate-slide-up: slide-up 1s ease-out forwards;
+  --animate-slide-up: slide-up 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   --animate-glow: glow 2s ease-in-out infinite alternate;
   --animate-float: float 6s ease-in-out infinite;
 
   @keyframes fade-in {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
   }
-  
+
   @keyframes slide-up {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
-  
+
   @keyframes glow {
-    from { box-shadow: 0 0 10px rgba(200, 16, 46, 0.2); }
-    to { box-shadow: 0 0 30px rgba(200, 16, 46, 0.8); }
+    from {
+      box-shadow: 0 0 10px rgba(218, 41, 28, 0.2);
+    }
+
+    to {
+      box-shadow: 0 0 40px rgba(218, 41, 28, 0.9);
+    }
   }
 
   @keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0px); }
+    0% {
+      transform: translateY(0px);
+    }
+
+    50% {
+      transform: translateY(-10px);
+    }
+
+    100% {
+      transform: translateY(0px);
+    }
   }
 }
 
 @layer base {
   body {
-    @apply bg-clancy-dark text-gray-200 antialiased selection:bg-clancy-red selection:text-white;
+    @apply bg-clancy-dark text-clancy-paper antialiased selection:bg-clancy-yellow selection:text-black;
     margin: 0;
     overflow-x: hidden;
   }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  .font-clancy {
+    font-family: var(--font-clancy);
+    letter-spacing: 0.05em;
+  }
+}
+
+/* Film Grain Texture */
+.bg-grain {
+  position: relative;
+}
+
+.bg-grain::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opactity='0.05'/%3E%3C/svg%3E");
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: 50;
+  mix-blend-mode: overlay;
+}
+
+/* Tape Effect */
+.tape-edge {
+  position: relative;
+  background: var(--color-clancy-red);
+  padding: 0.25rem 1rem;
+  transform: rotate(-2deg);
+  display: inline-block;
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+  clip-path: polygon(1% 0, 98% 2%, 100% 98%, 2% 100%);
+}
+
+.tape-yellow {
+  background: var(--color-clancy-yellow);
+  color: black;
 }
 
 /* Utilities for staggered animations */
-.delay-100 { animation-delay: 100ms; }
-.delay-200 { animation-delay: 200ms; }
-.delay-300 { animation-delay: 300ms; }
-.delay-400 { animation-delay: 400ms; }
-.delay-500 { animation-delay: 500ms; }
-.delay-600 { animation-delay: 600ms; }
-.delay-700 { animation-delay: 700ms; }
-.delay-800 { animation-delay: 800ms; }
+.delay-100 {
+  animation-delay: 100ms;
+}
 
-/* In Tailwind v4, custom utility classes can just be regular CSS or via plugins. 
-   These helper classes ensure elements are hidden before the animation starts */
+.delay-200 {
+  animation-delay: 200ms;
+}
+
+.delay-300 {
+  animation-delay: 300ms;
+}
+
+.delay-400 {
+  animation-delay: 400ms;
+}
+
+.delay-500 {
+  animation-delay: 500ms;
+}
+
+.delay-600 {
+  animation-delay: 600ms;
+}
+
+.delay-700 {
+  animation-delay: 700ms;
+}
+
+.delay-800 {
+  animation-delay: 800ms;
+}
+
 .opacity-0-init {
   opacity: 0;
 }

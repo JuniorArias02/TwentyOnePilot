@@ -5,7 +5,7 @@ import CTA from './components/CTA'
 
 function App() {
   return (
-    <div className="bg-clancy-dark min-h-screen text-gray-200 font-sans font-light selection:bg-clancy-red selection:text-white pb-10 overflow-hidden relative">
+    <div className="bg-clancy-dark min-h-screen text-clancy-paper font-sans font-light selection:bg-clancy-yellow selection:text-black pb-10 overflow-hidden relative bg-grain">
       <Hero />
       <Message />
       <Experience />
